@@ -1,4 +1,4 @@
-const API_URL = "http://20.39.195.152";
+const API_URL = "https://letting-personality-grows-biological.trycloudflare.com";
 
 
 export async function uploadPDF(file) {
