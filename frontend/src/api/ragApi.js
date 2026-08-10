@@ -1,4 +1,4 @@
-const API_URL = "https://letting-personality-grows-biological.trycloudflare.com";
+const API_URL = "https://encourages-maker-cleared-ata.trycloudflare.com";
 
 
 export async function uploadPDF(file) {
