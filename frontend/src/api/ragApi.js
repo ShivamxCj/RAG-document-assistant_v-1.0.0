@@ -1,4 +1,4 @@
-const API_URL = "http://20.39.195.152:8000";
+const API_URL = "http://20.39.195.152";
 
 
 export async function uploadPDF(file) {
