@@ -1,4 +1,4 @@
-# 🚀 ContextaAI - RAG Powered AI Knowledge Assistant
+#  ContextaAI - RAG Powered AI Knowledge Assistant
 
 ![ContextaAI Banner](./assets/banner.png)
 
@@ -10,7 +10,7 @@ The project demonstrates an end-to-end **Generative AI application pipeline**, i
 
 ---
 
-# 🌟 Features
+# Features
 
 ## 📄 Document Understanding
 
@@ -28,14 +28,14 @@ The project demonstrates an end-to-end **Generative AI application pipeline**, i
 - Provides source page references with answers
 
 
-## 🤖 AI Question Answering
+##  AI Question Answering
 
 - Context-aware responses using LLM
 - Reduces hallucination by grounding answers on retrieved document information
 - Supports natural language conversations with documents
 
 
-## ⚡ Full Stack AI Application
+##  Full Stack AI Application
 
 - React-based interactive frontend
 - FastAPI backend
