@@ -184,18 +184,6 @@ function Header() {
         ">
 
 
-          <Link
-            to="/"
-            onClick={() => setMenuOpen(false)}
-            className="
-              block
-              text-slate-300
-              hover:text-white
-            "
-          >
-            Home
-          </Link>
-
 
 
           <Link
