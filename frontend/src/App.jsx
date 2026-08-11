@@ -4,11 +4,13 @@ import FileUpload from "./components/FileUpload";
 import ChatBox from "./components/ChatBox";
 import HowItWorks from "./components/HowItWorks";
 import Footer from "./components/Footer";
+import NoticeModal from "./components/NoticeModal";
 
 function App() {
 
   const [sessionId, setSessionId] = useState(null);
   const [fileName, setFileName] = useState("");
+  const [showNotice, setShowNotice] = useState(false);
 
 
 
@@ -24,7 +26,10 @@ function App() {
         <div className="flex justify-center items-center h-[80vh]">
 
           <FileUpload
-            setSessionId={setSessionId}
+            setSessionId={(id) => {
+              setSessionId(id);
+              setShowNotice(true);
+            }}
             setFileName={setFileName}
           />
 
@@ -41,9 +46,11 @@ function App() {
           <div className="w-[30%]">
 
             <FileUpload
-              setSessionId={setSessionId}
+              setSessionId={(id) => {
+                setSessionId(id);
+                setShowNotice(true);
+              }}
               setFileName={setFileName}
-              fileName={fileName}
             />
             <HowItWorks />
 
@@ -63,6 +70,11 @@ function App() {
 
       )}
       <Footer />
+      {showNotice && (
+  <NoticeModal
+    onContinue={() => setShowNotice(false)}
+  />
+)}
 
     </div>
 
