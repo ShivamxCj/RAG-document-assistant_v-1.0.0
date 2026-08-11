@@ -1,48 +1,135 @@
 function HowItWorks() {
 
+
   const steps = [
+
     "Upload your PDF document",
-    "Extract text from the document",
-    "Split text into smaller chunks",
-    "Create embeddings and store in vector database",
+
+    "Extract text from the document using PDF processing",
+
+    "Split text into smaller meaningful chunks",
+
+    "Create embeddings and store them in a vector database",
+
     "Retrieve relevant information using similarity search",
-    "Generate answers using the LLM with document context"
+
+    "Generate context-aware answers using the LLM"
+
   ];
+
 
 
   return (
 
-    <div className="bg-slate-900 border border-slate-700 rounded-xl shadow-lg p-5 mt-6">
+    <div
+      className="
+        bg-slate-900
+        border
+        border-slate-700
+        rounded-xl
+        shadow-lg
+        p-4
+        sm:p-5
+        mt-6
+        w-full
+      "
+    >
 
-      <h2 className="text-lg font-semibold mb-4">
-        How it works
+
+
+      <h2
+        className="
+          text-lg
+          sm:text-xl
+          font-semibold
+          mb-5
+          text-white
+        "
+      >
+        ⚙️ How it works
       </h2>
 
 
-      <div className="space-y-3">
 
-        {steps.map((step, index) => (
+
+
+      <div
+        className="
+          space-y-4
+        "
+      >
+
+
+        {steps.map((step,index)=>(
+
 
           <div
             key={index}
-            className="flex gap-3 items-start"
+            className="
+              flex
+              gap-3
+              items-start
+            "
           >
 
-            <div className="bg-indigo-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm">
+
+
+
+            {/* Step Number */}
+
+            <div
+              className="
+                flex-shrink-0
+                bg-indigo-600
+                text-white
+                rounded-full
+                w-6
+                h-6
+                sm:w-7
+                sm:h-7
+                flex
+                items-center
+                justify-center
+                text-xs
+                sm:text-sm
+                font-medium
+              "
+            >
+
               {index + 1}
+
             </div>
 
 
-            <p className="text-sm text-slate-300">
+
+
+
+
+            {/* Step Text */}
+
+            <p
+              className="
+                text-sm
+                sm:text-base
+                text-slate-300
+                leading-relaxed
+              "
+            >
+
               {step}
+
             </p>
+
 
 
           </div>
 
+
         ))}
 
+
       </div>
+
 
 
     </div>

@@ -21,7 +21,7 @@ function Footer() {
 
 
         <h2 className="text-xl font-semibold text-white">
-          RAG Document Assistant v 1.0.0
+          ContextAI v 1.0.0
         </h2>
 
 
